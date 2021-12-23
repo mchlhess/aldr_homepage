@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'Object Sans Heavy';
+  src: url("/assets/ObjectSans-Heavy.otf") format('opentype');
+}
+@font-face {
+  font-family: 'Object Sans Heavy Slanted';
+  src: url("/assets/ObjectSans-HeavySlanted.otf") format('opentype');
+}
+@font-face {
+  font-family: 'Object Sans';
+  src: url("/assets/ObjectSans-Regular.otf") format('opentype');
+}
+@font-face {
+  font-family: 'Object Sans Slanted';
+  src: url("/assets/ObjectSans-Slanted.otf") format('opentype');
+}
 html * {
   box-sizing: border-box;
 }
@@ -66,7 +82,7 @@ Headline
   transform: translateY(100%);
   opacity: 0;
   animation-fill-mode:forwards;
-  
+
   animation-timing-function:ease;
   animation-duration: .7s;
 }
@@ -84,7 +100,7 @@ Headline
   transform: translateY(100%);
   opacity: 0;
   animation-fill-mode:forwards;
-  
+
   animation-timing-function:ease;
   animation-duration: .9s;
 }
@@ -106,20 +122,20 @@ Headline
   flex-flow: row nowrap;
   overflow: hidden;
 }
-.waitlist-submit, .waitlist-input {      
+.waitlist-submit, .waitlist-input {
   font-family: Poppins;
   border: none;
   height: 50px;
   border-radius: 8px;
   font-size: 16px;
   margin: 3px;
-  
+
   animation-delay: 1.2s;
   opacity: 0;
   animation-fill-mode:forwards;
   transform: translateY(100%);
   transition: all 300ms ease;
-  
+
   animation-timing-function:ease;
   animation-duration: .7s;
   animation-name: waitlistAnimation;
@@ -160,7 +176,7 @@ Headline
   }
   100% {
     transform: translateY(0) ;
-    opacity: 1; 
+    opacity: 1;
   }
 }
 
@@ -286,9 +302,9 @@ Cards
   top: 0;
   height: 120%;
   transition: all 300ms ease;
-  
+
   width: 100%;
-  
+
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -343,11 +359,11 @@ Cards
   }
   60% {
     transform: translateY(0) ;
-    opacity: 1; 
+    opacity: 1;
   }
   100% {
     transform: translateY(0) ;
-    opacity: 1; 
+    opacity: 1;
   }
 }
 @keyframes subtitleAnimationSecond {
@@ -361,11 +377,11 @@ Cards
   }
   70% {
     transform: translateY(0) ;
-    opacity: 1; 
+    opacity: 1;
   }
   100% {
     transform: translateY(0) ;
-    opacity: 1; 
+    opacity: 1;
   }
 }
 @keyframes subtitleAnimationThird {
@@ -379,11 +395,11 @@ Cards
   }
   90% {
     transform: translateY(0) ;
-    opacity: 1; 
+    opacity: 1;
   }
   100% {
     transform: translateY(0) ;
-    opacity: 1; 
+    opacity: 1;
   }
 }
 @keyframes subtitleAnimationFourth {
@@ -397,7 +413,7 @@ Cards
   }
   100% {
     transform: translateY(0) ;
-    opacity: 1; 
+    opacity: 1;
   }
 }
 
@@ -408,11 +424,11 @@ Cards
   }
   80% {
     transform: translateY(0) ;
-    opacity: 1; 
+    opacity: 1;
   }
   100% {
     transform: translateY(0) ;
-    opacity: 1; 
+    opacity: 1;
   }
 }
 @keyframes titleAnimationSecond {
@@ -422,11 +438,10 @@ Cards
   }
   20% {
     transform: translateY(100%) ;
-    opacity: 0; 
+    opacity: 0;
   }
   100% {
     transform: translateY(0) ;
-    opacity: 1; 
+    opacity: 1;
   }
 }
-
