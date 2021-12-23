@@ -293,9 +293,8 @@
           const data = new FormData(form)
           const formData = Object.fromEntries(data.entries());
           // gimme dat
-          var response = httpPost('https://app.aldr.co/waitlist/', null, formData)
-          response
-
+          httpPost('https://app.aldr.co/waitlist/', null, formData)
+          form.reset()
         }
 
         const waitlistForm = document.getElementById("waitlist");
