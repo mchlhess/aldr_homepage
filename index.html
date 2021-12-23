@@ -1,19 +1,304 @@
+<!DOCTYPE html>
 <head>
-  <style>
-    .fit {
-      max-width: 99%;
-      max-height: 99%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    body {background-color: #000000;}
-  </style>
-  <link rel="icon" href="favicon.png" type="image/x-icon">
-  <title>Aldr</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 
-<span class="body">
-  <img class="fit" src="asset.png">
-</span>
+<body>
+  <div class="main">
+    <div class="header-logo--container">
+      <div class="header-logo--wrapper"><img class="header-logo" src="assets/aldr_logo.png"/></div>
+    </div>
+    <div class="headline-container">
+      <div class="headline-wrapper">
+        <div class="headline os-heavy-slanted">
+          <div class="headline-line"><div class="headline-text">Pardon our dust,</div></div>
+          <div class="headline-line"><div class="headline-text">we're building</div></div>
+        </div>
+        <div class="subheadline">
+          <div class="subheadline-line"><div class="subheadline-text">Aldr is an end-to-end token management tool</div></div>
+          <div class="subheadline-line"><div class="subheadline-text">focused on NFT minting and distribution.</div></div>
+          <div class="subheadline-line"><div class="subheadline-text">We handle every step of the token lifecycle</div></div>
+          <div class="subheadline-line"><div class="subheadline-text">so that creators and holders don’t have to</div></div>
+        </div>
+        <form class="waitlist" id="waitlist">
+          <input type="email" class="waitlist-input" id="waitlist-email" name="email" placeholder="Join our waitlist">
+          <input type="submit" id="waitlist-submit" class="waitlist-submit" value="Submit">
+        </form>
+      </div>
+    </div>
+    <div class="carousel-container">
+      <div class="carousel-column carousel-column-1">
+        <div class="carousel-column--card-wrapper">
+          <div class="column-card column-card--frank card">
+            <div class="card-image--container">
+              <img class="card-image" src="assets/aldr-card-bgs/frank-bg.png"/>
+            </div>
+            <div class="card-title os-heavy-slanted">Blond (JPN ver)</div>
+            <div class="author--container">
+              <div class="author-image--wrapper">
+                <img class="author-image" src="assets/aldr-pfps/frank.png"/>
+              </div>
+              <div class="author-data">
+                <div class="author-data--label label">CREATED BY</div>
+                <div class="author-data--handle">@frankocean</div>
+              </div>
+            </div>
+          </div>
+          <div class="column-card column-card--frank card">
+            <div class="card-image--container">
+              <img class="card-image" src="assets/aldr-card-bgs/sobrock-bg.png"/>
+            </div>
+            <div class="card-title os-heavy-slanted">Sob Rock Tour 2022</div>
+            <div class="author--container">
+              <div class="author-image--wrapper">
+                <img class="author-image" src="assets/aldr-pfps/sobrock.png"/>
+              </div>
+              <div class="author-data">
+                <div class="author-data--label label">CREATED BY</div>
+                <div class="author-data--handle">@johnmayor</div>
+              </div>
+            </div>
+          </div>
+          <div class="column-card column-card--frank card">
+            <div class="card-image--container">
+              <img class="card-image" src="assets/aldr-card-bgs/hitc-bg.png"/>
+            </div>
+            <div class="card-title os-heavy-slanted">HITC 2021</div>
+            <div class="author--container">
+              <div class="author-image--wrapper">
+                <img class="author-image" src="assets/aldr-pfps/hitc.png"/>
+              </div>
+              <div class="author-data">
+                <div class="author-data--label label">CREATED BY</div>
+                <div class="author-data--handle">@88rising</div>
+              </div>
+            </div>
+          </div>
+          <div class="column-card column-card--frank card">
+            <div class="card-image--container">
+              <img class="card-image" src="assets/aldr-card-bgs/yeezy-bg.png"/>
+            </div>
+            <div class="card-title os-heavy-slanted">Adidas Yeezy 500</div>
+            <div class="author--container">
+              <div class="author-image--wrapper">
+                <img class="author-image" src="assets/aldr-pfps/adidas.png"/>
+              </div>
+              <div class="author-data">
+                <div class="author-data--label label">CREATED BY</div>
+                <div class="author-data--handle">@adidasoriginals</div>
+              </div>
+            </div>
+          </div>
+          <div class="column-card column-card--frank card">
+            <div class="card-image--container">
+              <img class="card-image" src="assets/aldr-card-bgs/nftnyc-bg.png"/>
+            </div>
+            <div class="card-title os-heavy-slanted">NFT NYC 2021</div>
+            <div class="author--container">
+              <div class="author-image--wrapper">
+                <img class="author-image" src="assets/aldr-pfps/nftnyc.png"/>
+              </div>
+              <div class="author-data">
+                <div class="author-data--label label">CREATED BY</div>
+                <div class="author-data--handle">@nftnyc</div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- <div class="column-card column-card--peach"><span class="columm-card--content">peach</span></div> -->
+
+        </div>
+      </div>
+      <div class="carousel-column carousel-column-2">
+        <div class="carousel-column--card-wrapper">
+        <div class="column-card column-card--frank card">
+        <div class="card-image--container">
+          <img class="card-image" src="assets/aldr-card-bgs/takashi-bg.png"/>
+        </div>
+        <div class="card-title os-heavy-slanted">Takashi Pom #33</div>
+        <div class="author--container">
+          <div class="author-image--wrapper">
+            <img class="author-image" src="assets/aldr-pfps/takashi.png"/>
+          </div>
+          <div class="author-data">
+            <div class="author-data--label label">CREATED BY</div>
+            <div class="author-data--handle">@takashipom</div>
+          </div>
+        </div>
+      </div>
+      <div class="column-card column-card--frank card">
+        <div class="card-image--container">
+          <img class="card-image" src="assets/aldr-card-bgs/punkworld-bg.png"/>
+        </div>
+        <div class="card-title os-heavy-slanted">PUNKWORLD 2019</div>
+        <div class="author--container">
+          <div class="author-image--wrapper">
+            <img class="author-image" src="assets/aldr-pfps/thugger.png"/>
+          </div>
+          <div class="author-data">
+            <div class="author-data--label label">CREATED BY</div>
+            <div class="author-data--handle">@youngthug</div>
+          </div>
+        </div>
+      </div>
+      <div class="column-card column-card--frank card">
+        <div class="card-image--container">
+          <img class="card-image" src="assets/aldr-card-bgs/ald-bg.png"/>
+        </div>
+        <div class="card-title os-heavy-slanted">ALD Woolrich FW21</div>
+        <div class="author--container">
+          <div class="author-image--wrapper">
+            <img class="author-image" src="assets/aldr-pfps/ald.png"/>
+          </div>
+          <div class="author-data">
+            <div class="author-data--label label">CREATED BY</div>
+            <div class="author-data--handle">@aimeleondore</div>
+          </div>
+        </div>
+      </div>
+      <div class="column-card column-card--frank card">
+        <div class="card-image--container">
+          <img class="card-image" src="assets/aldr-card-bgs/nbaallstar.png"/>
+        </div>
+        <div class="card-title os-heavy-slanted">2022 NBA All-Stars</div>
+        <div class="author--container">
+          <div class="author-image--wrapper">
+            <img class="author-image" src="assets/aldr-pfps/nba.png"/>
+          </div>
+          <div class="author-data">
+            <div class="author-data--label label">CREATED BY</div>
+            <div class="author-data--handle">@nba</div>
+          </div>
+        </div>
+      </div>
+      <div class="column-card column-card--frank card">
+        <div class="card-image--container">
+          <img class="card-image" src="assets/aldr-card-bgs/punkworld-bg.png"/>
+        </div>
+        <div class="card-title os-heavy-slanted">yo</div>
+        <div class="author--container">
+          <div class="author-image--wrapper">
+            <img class="author-image" src="assets/aldr-pfps/thugger.png"/>
+          </div>
+          <div class="author-data">
+            <div class="author-data--label label">CREATED BY</div>
+            <div class="author-data--handle">@youngthug</div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+      <div class="carousel-column carousel-column-3">
+        <div class="carousel-column--card-wrapper">
+        <div class="column-card column-card--frank card">
+        <div class="card-image--container">
+          <img class="card-image" src="assets/aldr-card-bgs/adibayc.png"/>
+        </div>
+        <div class="card-title os-heavy-slanted">Adidas X BAYC 2022</div>
+        <div class="author--container">
+          <div class="author-image--wrapper">
+            <img class="author-image" src="assets/aldr-pfps/adidas.png"/>
+          </div>
+          <div class="author-data">
+            <div class="author-data--label label">CREATED BY</div>
+            <div class="author-data--handle">@adidasoriginals</div>
+          </div>
+        </div>
+      </div>
+      <div class="column-card column-card--frank card">
+        <div class="card-image--container">
+          <img class="card-image" src="assets/aldr-card-bgs/vangogh.png"/>
+        </div>
+        <div class="card-title os-heavy-slanted">Immersive Van Gogh @ The De Young</div>
+        <div class="author--container">
+          <div class="author-image--wrapper">
+            <img class="author-image" src="assets/aldr-pfps/vangogh.png"/>
+          </div>
+          <div class="author-data">
+            <div class="author-data--label label">CREATED BY</div>
+            <div class="author-data--handle">@vincent</div>
+          </div>
+        </div>
+      </div>
+      <div class="column-card column-card--frank card">
+        <div class="card-image--container">
+          <img class="card-image" src="assets/aldr-card-bgs/endless.png"/>
+        </div>
+        <div class="card-title os-heavy-slanted">Endless 2016</div>
+        <div class="author--container">
+          <div class="author-image--wrapper">
+            <img class="author-image" src="assets/aldr-pfps/frank.png"/>
+          </div>
+          <div class="author-data">
+            <div class="author-data--label label">CREATED BY</div>
+            <div class="author-data--handle">@frankocean</div>
+          </div>
+        </div>
+      </div>
+      <div class="column-card column-card--frank card">
+        <div class="card-image--container">
+          <img class="card-image" src="assets/aldr-card-bgs/frank-bg.png"/>
+        </div>
+        <div class="card-title os-heavy-slanted">Blond (JPN ver)</div>
+        <div class="author--container">
+          <div class="author-image--wrapper">
+            <img class="author-image" src="assets/aldr-pfps/frank.png"/>
+          </div>
+          <div class="author-data">
+            <div class="author-data--label label">CREATED BY</div>
+            <div class="author-data--handle">@frankocean</div>
+          </div>
+        </div>
+      </div>
+      <div class="column-card column-card--frank card">
+        <div class="card-image--container">
+          <img class="card-image" src="assets/aldr-card-bgs/sobrock-bg.png"/>
+        </div>
+        <div class="card-title os-heavy-slanted">Sob Rock Tour 2022</div>
+        <div class="author--container">
+          <div class="author-image--wrapper">
+            <img class="author-image" src="assets/aldr-pfps/sobrock.png"/>
+          </div>
+          <div class="author-data">
+            <div class="author-data--label label">CREATED BY</div>
+            <div class="author-data--handle">@johnmayor</div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    function httpPost(url, callback, data)
+      {
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", url, true);
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+        xhr.send(JSON.stringify(data));
+      }
+        function submitForm(e, form) {
+          e.preventDefault();
+          // disable after submit
+          const btnSubmit = document.getElementById('waitlist-submit');
+          btnSubmit.disabled = true;
+          setTimeout(() => btnSubmit.disabled = false, 2000);
+          // grab email
+          const data = new FormData(e.target)
+          const formData = Object.fromEntries(data.entries());
+          // gimme dat
+          httpPost('https://app.aldr.co/waitlist/', null, data)
+        }
+    
+        const waitlistForm = document.getElementById("waitlist");
+        if(waitlistForm) {
+            waitlistForm.addEventListener("submit", function(e) {
+                submitForm(e, this);
+            });
+        }
+        </script>
+</body>
