@@ -28,6 +28,9 @@ body {
   font-weight: 300;
   overflow-x: hidden;
 }
+a {
+  color: #03E1FF;
+}
 .os-heavy-slanted {
   font-family: "Object Sans";
   font-weight: bold;
