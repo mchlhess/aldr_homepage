@@ -289,7 +289,7 @@
           btnSubmit.disabled = true;
           setTimeout(() => btnSubmit.disabled = false, 2000);
           // grab email
-          const data = new FormData(e.target)
+          const data = new FormData(form)
           const formData = Object.fromEntries(data.entries());
           // gimme dat
           httpPost('https://app.aldr.co/waitlist/', null, data)
