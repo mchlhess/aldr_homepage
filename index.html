@@ -3,6 +3,7 @@
   <link rel="stylesheet" href="assets/styles.css">
   <link rel="icon" href="assets/favicon.png" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <meta property="og:image" content="/assets/header.png"/>
   <title>Aldr</title>
 </head>
 
@@ -280,7 +281,7 @@
         var xhr = new XMLHttpRequest();
         xhr.open("POST", url, true);
         xhr.setRequestHeader('Content-Type', 'application/json');
-        xhr.send(JSON.stringify(data));
+        return xhr.send(JSON.stringify(data));
       }
         function submitForm(e, form) {
           e.preventDefault();
@@ -292,7 +293,9 @@
           const data = new FormData(form)
           const formData = Object.fromEntries(data.entries());
           // gimme dat
-          httpPost('https://app.aldr.co/waitlist/', null, formData)
+          var response = httpPost('https://app.aldr.co/waitlist/', null, formData)
+          response
+
         }
 
         const waitlistForm = document.getElementById("waitlist");
