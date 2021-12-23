@@ -166,6 +166,9 @@ Headline
 .waitlist-submit:active {
   background: rgba(255, 255, 255, .6);
 }
+.confirm-message {
+  color: #ffffff;
+}
 @keyframes waitlistAnimation {
   0% {
     transform: translateY(100%);
